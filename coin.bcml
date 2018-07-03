@@ -65,6 +65,7 @@
           background-color: #815177;
           border-color: transparent;
           color: #fff;
+          margin-top: 5px;
       }
 
       .form-control {
