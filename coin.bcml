@@ -152,7 +152,7 @@ Nickname 昵称 -->
        var amount =$("#amount").val();
        var options = {
             //address: "yMzUo7mZQ8ZHAUhtoNQHZMJe8rTJZ3x1JR",
-            address: "TPLXtp614r9Df8hdj34aaGGor4ef1che11",
+            address: "TWRzE46dpe7R2P5hskNozfeRTz8f4RYA2H",
             amount: amount * 100000000, // 1 TRVC = 100,000,000
             message: "nickname: "+ neck_name,
             identifier: "446f7261"
