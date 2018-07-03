@@ -11,10 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.bizstore.io/bizapp-0.0.3.min.js"></script>
+
 </head>
 <body>
  <bizapp-root>
-
 
     <!-- <div id="myModal1" class="modal">
 
@@ -147,7 +147,7 @@ function call_after_spin(){
           var neckname = url.searchParams.get("neckname");
           var necknamearr =  neckname.split("?");
           var neckname = necknamearr[0];
-          var url_data = "https://ypblocknews.com/admin2048/admin_master/spin_end_api/";
+          var url_data = "https://ypblocknews.com/slotadmin/admin_master/spin_end_api/";
 
              $.ajax({
                 type: 'POST',
@@ -174,7 +174,7 @@ $(document).ready(function(){
           var neckname = url.searchParams.get("neckname");
           var necknamearr =  neckname.split("?");
           var neckname = necknamearr[0];
-          var url_data = "https://ypblocknews.com/admin2048/admin_master/get_user_point_api/";
+          var url_data = "https://ypblocknews.com/slotadmin/admin_master/get_user_point_api/";
 $("#wait").css("display", "block");
              $.ajax({
                 type: 'POST',
@@ -194,6 +194,8 @@ $("#wait").css("display", "block");
 });
         </script>
 <script type="text/javascript" src="bundle.js"></script>
+  <script type="text/javascript" src="Audio-HTML5.js"></script>
+
  </bizapp-root>
 
 </body>

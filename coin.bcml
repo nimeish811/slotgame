@@ -147,7 +147,7 @@ Nickname 昵称 -->
 
   function submit_wallet(){
 
-      /* var wallet = $("#wallet").val();
+    var wallet = $("#wallet").val();
        var neck_name =$("#neck_name").val();
        var amount =$("#amount").val();
        var options = {
@@ -173,7 +173,7 @@ Nickname 昵称 -->
               var neckname = url.searchParams.get("neckname");
               var necknamearr =  neckname.split("?");
               var neckname = necknamearr[0];
-              var url_data = "https://ypblocknews.com/admin2048/admin_master/buy_coin_api/";
+              var url_data = "https://ypblocknews.com/slotadmin/admin_master/buy_coin_api/";
 
                  $.ajax({
                     type: 'POST',
@@ -187,27 +187,27 @@ Nickname 昵称 -->
                 });
 
       }
-    }); */
+    }); 
 
-              var url_string = window.location.href;
-              var url = new URL(url_string);
-              var wallet = url.searchParams.get("wallet");
-              var neckname = url.searchParams.get("neckname");
-              var necknamearr =  neckname.split("?");
-              var neckname = necknamearr[0];
-              var amount = 100;
-              var url_data = "https://ypblocknews.com/admin2048/admin_master/buy_point_api/";
+              // var url_string = window.location.href;
+              // var url = new URL(url_string);
+              // var wallet = url.searchParams.get("wallet");
+              // var neckname = url.searchParams.get("neckname");
+              // var necknamearr =  neckname.split("?");
+              // var neckname = necknamearr[0];
+              // var amount = 100;
+              // var url_data = "https://ypblocknews.com/admin2048/admin_master/buy_point_api/";
 
-                 $.ajax({
-                    type: 'POST',
-                    url: url_data,
-                    data: {wallet:wallet,nick:neckname,amount:amount},
-                    success : function(data) {
-                        if(data.status==1){
-                          window.location.href="coin.bcml?wallet="+wallet+"&neckname="+neckname;
-                        }
-                    }
-                });
+              //    $.ajax({
+              //       type: 'POST',
+              //       url: url_data,
+              //       data: {wallet:wallet,nick:neckname,amount:amount},
+              //       success : function(data) {
+              //           if(data.status==1){
+              //             window.location.href="coin.bcml?wallet="+wallet+"&neckname="+neckname;
+              //           }
+              //       }
+              //   });
 
         
     }
@@ -219,7 +219,7 @@ Nickname 昵称 -->
       var neckname = url.searchParams.get("neckname");
       var wallet = url.searchParams.get("wallet");
 
-      var url_data = "https://ypblocknews.com/admin2048/admin_master/get_point_api/";
+      var url_data = "https://ypblocknews.com/slotadmin/admin_master/get_point_api/";
 
           $.ajax({
             url: url_data,
@@ -272,7 +272,7 @@ Nickname 昵称 -->
     function request(){
 
       var coin  = $("#coin_hide").val();
-      if(coin < 0 ){
+      if(coin == 0 ){
         $("#error_msg").text("Insficent coin");
         return false;
       }
@@ -282,7 +282,7 @@ Nickname 昵称 -->
       var neckname = url.searchParams.get("neckname");
       var wallet = url.searchParams.get("wallet");
 
-      var url_data = "https://ypblocknews.com/admin2048/admin_master/money_request_spin_api/";
+      var url_data = "https://ypblocknews.com/slotadmin/admin_master/money_request_spin_api/";
 
           $.ajax({
             url: url_data,
