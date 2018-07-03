@@ -245,21 +245,21 @@ Nickname 昵称 -->
     var url = new URL(url_string);
     var neckname = url.searchParams.get("neckname");
     var wallet = url.searchParams.get("wallet");
-      
-    var url_data = "https://ypblocknews.com/admin2048/admin_master/game_play_api/";
+    window.location.href="game.bcml?wallet="+wallet+"&neckname="+neckname;
+    // var url_data = "https://ypblocknews.com/admin2048/admin_master/game_play_api/";
 
-      $.ajax({
-        url: url_data,
-       // data: json,
-        data: {wallet:wallet,nick:neckname},
-        success : function(data) {
+    //   $.ajax({
+    //     url: url_data,
+    //    // data: json,
+    //     data: {wallet:wallet,nick:neckname},
+    //     success : function(data) {
                
-                if(data.status==1){
-                 window.location.href="game.bcml?wallet="+wallet+"&neckname="+neckname;
-                }
+    //             if(data.status==1){
+    //              window.location.href="game.bcml?wallet="+wallet+"&neckname="+neckname;
+    //             }
                        
-        }
-      });
+    //     }
+    //   });
 
       
       
